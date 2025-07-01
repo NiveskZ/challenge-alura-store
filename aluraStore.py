@@ -67,3 +67,11 @@ for i, loja in enumerate(lojas,start=1):
     frete_medio[f'loja {i}'] = round(loja["Frete"].mean(),2)
 pd.Series(frete_medio)
 # %%
+# Gerando Gráficos
+import matplotlib.pyplot as plt
+
+plt.barh(['Loja 1', 'Loja 2', 'Loja 3', 'Loja 4'], faturamentos)
+plt.title('Faturamento por Loja')
+plt.xlabel('Faturamento')
+faturamentos
+# %%
