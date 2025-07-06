@@ -24,7 +24,7 @@ Nosso objetivo será ajudar o Sr. João a decidir qual loja da sua rede Alura St
 - Loja 3: R$ 33,07
 - Loja 4: R$ 31,28 
 
-![Faturamento e frete médio por loja](imgs\faturamento-freteMedio-bar.png)
+![Faturamento e frete médio por loja](https://github.com/NiveskZ/challenge-alura-store/blob/main/imgs/faturamento-freteMedio-bar.png?raw=true)
 
 Observamos que a loja 1 possui o maior faturamento e a loja 4 possui um faturamento muito menor em relação aos demais.
 
@@ -70,18 +70,18 @@ Com 33 unidades vendidas.
 Através dessas informações, podemos ficar tentados a concluir que a loja 2 vende muito produtos com valores menores em relação as outras lojas, porém note que todas as lojas possui uma amplitude similar de unidades vendidas por produto, logo todos os produtos em cada loja vendem no mínimo 32 unidades e no máximo 65 unidades geralmente.
 
 O gráfico a seguir nos ajuda a visualizar melhor a relevância de venda dos produtos, separado por categoria, em cada loja.
-![Unidades vendidas por categoria](imgs\linhas-unidade-categoria.png)
+![Unidades vendidas por categoria](https://github.com/NiveskZ/challenge-alura-store/blob/main/imgs/linhas-unidade-categoria.png?raw=true)
 
 Nele, percebemos que todas as lojas possuem um desempenho similar,a loja 2 possui um rendimento abaixo da média nos eletrônicos, porém compensa em instrumentos musicais e livros, estando bem acima das outras lojas. Por outro lado a loja 4 possui um desempenho muito abaixo nos eletrodomésticos e está constantemente abaixo ou igual as outras lojas no restante.
 ## Gráficos complementares para análise
 
 Tendo em vista o desempenho da loja 4 em unidades por categoria, vamos ver o quanto isso afeta o rendimento ao longo dos dias.
 
-![Receita diária ao longo do tempo](imgs\dispersao-receita-diaria.png)
+![Receita diária ao longo do tempo](https://github.com/NiveskZ/challenge-alura-store/blob/main/imgs/dispersao-receita-diaria.png?raw=true)
 
 Pelo gráfico de dispersão, observamos que a receita diária da loja 4 está bem limitada abaixo de 2000, começando a ter muitos buracos acima disso, aparentando ter um desempenho geral inferior as outras lojas. 
 
-![Distribuição da receita em número de dias](imgs\hist-distribuicao-diaria.png)
+![Distribuição da receita em número de dias](https://github.com/NiveskZ/challenge-alura-store/blob/main/imgs/hist-distribuicao-diaria.png?raw=true)
 
 O histograma acima corrobora com a informação anterior, onde vemos que a loja 4 possui uma quantidade de dias muito maior de receita abaixo de 2000. 
 
@@ -89,7 +89,7 @@ As outras lojas, apesar de também ter uma alta concentração, possui uma quant
 
 Por fim temos o gráfico de calor abaixo. Nele podemos observar que a loja 4 possui regiões com uma concentração menor que o restante das lojas, mostrando um desempenho abaixo dos demais em certas regiões. Apesar de ter uma pequena região onde as outras não possuem desempenho visível, as demais possuem uma área bem menor que as outras 3 lojas.
 
-![Heatmap](imgs\heatmap-regiao.png)
+![Heatmap](https://github.com/NiveskZ/challenge-alura-store/blob/main/imgs/heatmap-regiao.png?raw=true)
 
 ## Conclusão
 Feita todas as análises e através da visualização de dados, podemos concluir que a loja 4 é a que possui um menor desempenho, tendo um faturamento muito inferior as outras lojas. além de que podemos notar que será a loja que terá o menor impacto com sua venda, pois não possui nenhuma categoria que se sobressaia em relação as outras lojas, possui pequena diferença demográfica e pouco desempenho em diversas regiões. Além de possuir a pior distribuição de receita no tempo.
