@@ -1,5 +1,6 @@
 #%%
 import pandas as pd
+import matplotlib.pyplot as plt
 
 url = "https://raw.githubusercontent.com/alura-es-cursos/challenge1-data-science/refs/heads/main/base-de-dados-challenge-1/loja_1.csv"
 url2 = "https://raw.githubusercontent.com/alura-es-cursos/challenge1-data-science/refs/heads/main/base-de-dados-challenge-1/loja_2.csv"
@@ -68,16 +69,21 @@ for i,loja in enumerate(lojas):
         print(f'receita loja {i+1} {produto}:R$ {receita}')
     
 # %%
+# Receita dos produtos que tiveram menor quantidade de unidades vendidas
+for i,loja in enumerate(lojas):
+    vendas = loja.groupby(['Produto'])['Preço'].sum()
+    vendas = vendas.sort_values(ascending=False)
+    for j in range(len(menos_vendido[f'loja {i+1}'][0])):
+        produto = menos_vendido[f'loja {i+1}'][0][j]
+        receita = vendas.loc[produto]
+        print(f'receita loja {i+1} {produto}:R$ {receita}')
+#%%
 # Frete Médio por Loja
-
 frete_medio = {}
 
 for i, loja in enumerate(lojas,start=1):
     frete_medio[f'loja {i}'] = round(loja["Frete"].mean(),2)
 pd.Series(frete_medio)
-# %%
-# Visualização através de gráficos
-import matplotlib.pyplot as plt
 # %%
 # Gráfico de barras de faturamento por loja e frete médio por loja
 df_frete_medio = pd.Series(frete_medio)
@@ -121,14 +127,17 @@ ax.set_ylabel('Unidades vendidas')
 
 plt.show()
 # %%
+# Colocando a coluna 'Data da Compra em formato de data (datetime)
 for loja in lojas:
     loja['Data da Compra'] = pd.to_datetime(loja['Data da Compra'],dayfirst=True)
 # %%
+# Fazendo a soma das receitas agrupado por dia da compra
 soma_receita = []
 for loja in lojas:
     soma_receita.append(loja.groupby(['Data da Compra'])['Preço'].sum())
 
 # %%
+# Gráfico de dispersão de Receita diária
 fig, ax = plt.subplots(figsize=(10,6))
 
 ax.set_title('Receita diária ao longo do tempo')
@@ -144,7 +153,9 @@ ax.set_ylabel('Receita')
 ax.legend()
 ax.grid()
 
+plt.show()
 # %%
+# Histograma para avaliar a distribuição em número de dias
 fig, axs = plt.subplots(2,2,figsize=(10,6))
 fig.subplots_adjust(hspace=0.6,wspace=0.3)
 fig.suptitle('Distribuição da receita em número de dias')
@@ -174,8 +185,10 @@ for ax in axs.ravel():
     ax.set_ylim(0,ymax)
 plt.show()
 # %%
+# Mapa de calor de Longitude e Latitude dos clientes de cada loja
 fig, axs = plt.subplots(2,2,figsize=(10,6))
 fig.subplots_adjust(hspace=0.4,wspace=0.2)
+fig.suptitle('Número de vendas por região')
 
 imgs = []
 
