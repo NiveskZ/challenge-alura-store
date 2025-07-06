@@ -39,33 +39,41 @@ Observamos que a loja 1 possui o maior faturamento e a loja 4 possui um faturame
 ### Produtos Mais e Menos Vendidos em Quantidade
 #### Mais vendidos
 - Loja 1:
-    - Micro-ondas:R$ 46.348,89
-    - TV Led UHD 4K:R$ 189.534,28
-    - Guarda roupas:R$ 39.282,78
-Todos vendendo 60 unidades.
+    - Micro-ondas: R$ 46.348,89
+    - TV Led UHD 4K: R$ 189.534,28
+    - Guarda roupas: R$ 39.282,78
+  
+  Todos vendendo 60 unidades.
 - Loja 2:
-    - Iniciado em programação:R$ 4.169,96
-Com 65 unidades vendidas.
+    - Iniciado em programação: R$ 4.169,96
+  
+  Com 65 unidades vendidas.
 - Loja 3:
-    - Kit banquetas:R$ 22.265,96
-Com 57 unidades vendidas.
-- Loja 4: Cama box:R$ 43.928,57
-Com 62 unidades vendidas.
+    - Kit banquetas: R$ 22.265,96
+  
+  Com 57 unidades vendidas.
+- Loja 4: Cama box: R$ 43.928,57
+
+  Com 62 unidades vendidas.
 
 #### Menos vendidos
 - Loja 1:
-    - Headset: R$6307,71
-    - Celular ABXY:R$ 43.534,47
-Ambos com 33 unidades vendidas.
+    - Headset: R$ 6307,71
+    - Celular ABXY: R$ 43.534,47
+  
+  Ambos com 33 unidades vendidas.
 - Loja 2:
-    - Jogo de tabuleiro:R$ 7.748,58
-Com 32 unidades vendidas.
+    - Jogo de tabuleiro: R$ 7.748,58
+      
+  Com 32 unidades vendidas.
 - Loja 3:
-    - Blocos de montar:R$ 1.649,81
-Com 35 unidades vendidas.
+    - Blocos de montar: R$ 1.649,81
+  
+  Com 35 unidades vendidas.
 - Loja 4:
-    - Guitarra:R$ 34.430,67
-Com 33 unidades vendidas.
+    - Guitarra: R$ 34.430,67
+  
+  Com 33 unidades vendidas.
 
 Através dessas informações, podemos ficar tentados a concluir que a loja 2 vende muito produtos com valores menores em relação as outras lojas, porém note que todas as lojas possui uma amplitude similar de unidades vendidas por produto, logo todos os produtos em cada loja vendem no mínimo 32 unidades e no máximo 65 unidades geralmente.
 
